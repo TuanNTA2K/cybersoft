@@ -8,6 +8,6 @@ public class IndexController {
 
     @GetMapping("/index")
     public String showIndexPage() {
-        return "index"; // Assuming "index" is the name of your HTML view file (index.html)
+        return "index";
     }
 }

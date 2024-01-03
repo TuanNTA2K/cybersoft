@@ -4,10 +4,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class DashboardController {
-
-    @GetMapping("/dashboard")
-    public String showDashboard() {
-        return "index";
+public class ErrorController {
+    @GetMapping("/404")
+    public String showErrorPage(){
+        return "404";
     }
 }
