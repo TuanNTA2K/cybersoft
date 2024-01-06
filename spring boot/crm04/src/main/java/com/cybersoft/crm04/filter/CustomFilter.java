@@ -24,10 +24,13 @@ public class CustomFilter implements Filter {
             filterChain.doFilter(servletRequest,servletResponse);
         }
     }
+<<<<<<< HEAD
 
 
 
     /*
     Nếu vào link là /role mà chưa đn thì sẽ chuyển về trang đn
      */
+=======
+>>>>>>> origin/main
 }
