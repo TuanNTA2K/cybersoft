@@ -42,11 +42,7 @@ public class LoginController {
         String email = "";
         String password = "";
         //A,B, email, password
-<<<<<<< HEAD
         if(cookies != null) {
-=======
-        if(cookies != null && cookies.length > 0) {
->>>>>>> origin/main
             for (Cookie cookie : cookies
             ) {
                 if (cookie.getName().equals("email")) {
@@ -89,20 +85,13 @@ public class LoginController {
             //Có giá trị => đăng nhập thành công
             redirectAttributes.addFlashAttribute("isSuccess", true);
             httpSession.setAttribute("email",email);
-<<<<<<< HEAD
             httpSession.setAttribute("role_id", listUser.get(0).getRolesEntity().getId());
-=======
->>>>>>> origin/main
             httpSession.setMaxInactiveInterval(8*60*60);
 //            cookieEmail = new Cookie("email", email);
 //            Cookie cookiePassword = new Cookie("password", password);
 //            response.addCookie(cookieEmail);
 //            response.addCookie(cookiePassword);
-<<<<<<< HEAD
             return "redirect:http://localhost:8080";
-=======
-            return "redirect:/index";
->>>>>>> origin/main
         } else {
             //Ko có giá trị => đăng nhập thất bại
             redirectAttributes.addFlashAttribute("isSuccess", false);
