@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3307/uniclub_web
+    username: root
+    password: admin123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none
+    open-in-view: false
+key:
+  token:
+    jwt: Q2FY6Zk4rA4UKbyD+t8Xw5Q6iDQ5eb65IM+otP1GgmQ=
+
+upload:
+  file:
+    path: D:\Documents\Study\cybersoft\upload
